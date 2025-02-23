@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    color: #121212;
+}
+
+a{
+    text-decoration: none;
+    color: #121212;
+}
+
+a:hover{
+text-decoration: underline;
+}
+
+li{
+    list-style: none;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+        "head head head head"
+        "menu main main main"
+        "footer footer footer footer";
+}
+
+.header{
+    grid-area: head;
+    background-color: #ea899a;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img{
+    height: 38px;
+}
+.menu{
+    grid-area: menu;
+    height: 100vh;
+    background-color: #f2f2f2;
+    padding: 44px 16px;
+}
+
+.logo{
+    padding: 22px 0;
+}
+
+.categoria ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.categoria li{
+    padding: 6px 0;
+}
+
+.main{
+    grid-area: main;
+    background-color: white;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    justify-items: center;
+    padding: 32px 0;
+}
+
+.card{
+    width: 250px;
+    background-color: #fbe3e3;
+    padding: 8px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.oferta{
+    background-color: #121212;
+    color: white;
+    padding: 2px 4px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.foto-prod{
+    width: 100%;
+}
+
+.text-product{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.text-product span{
+font-size: 14px;
+padding: 2px 0;
+}
+
+.descripcion{
+    font-size: 16px;
+    color: #343434;
+}
+
+.valor{
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+.footer{
+    grid-area: footer;
+    height: 60px;
+    background-color: #e3bbbc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-footer img{
+    width: 45px;
+    padding: 8px 8px;
+}
